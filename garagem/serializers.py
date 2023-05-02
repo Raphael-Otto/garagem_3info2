@@ -26,3 +26,14 @@ class ModeloSerializer(ModelSerializer):
     class Meta:
         model = Modelo
         fields = "__all__"
+
+class VeiculoSerializer(ModelSerializer):
+    class Meta:
+        model = Veiculo
+        fields = "__all__"
+
+class VeiculoDetailSerializer(ModelSerializer):
+    class Meta:
+        model = Veiculo
+        fields = "__all__"
+        depth = 1
